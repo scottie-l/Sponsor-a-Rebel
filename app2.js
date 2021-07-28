@@ -1,0 +1,1 @@
+let userAge=prompt ("How old are you?")
