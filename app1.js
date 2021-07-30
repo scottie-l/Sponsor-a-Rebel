@@ -1,36 +1,38 @@
 // userName Var
-userName
-function getuserName(){
-    let userName = prompt("What is your Name?")
+// userName
+function userName(){
+    let userNameprompt = prompt("What is your Name?")
 
-if(userName() == "scott"){
-    document.write('<h2>Welcome Padawan ' + userName + '</h2>')
-} else {
-    document.write('<h2>Welcome ' + userName + '<h2/>') 
+    if (userNameprompt == "scott"){
+        document.write('<h2>Welcome Padawan ' + userNameprompt + '</h2>')
+    } else {
+        document.write('<h2>Welcome ' + userNameprompt + '<h2/>') 
+    }
 }
-userName();
+// userName();
 
 // userAge Var
-userAge 
-// function userAge(){
+// userAge 
+function userAge(){
     let userAge=prompt ("How old are you?")
-    console.log (userAge)
-    while(userAge !== "isNaN" && userAge == "Number"){
-    
+    console.log(userAge)
+    parseInt(userAge)
+    while(isNaN(userAge) === true){
         userAge = prompt('How old are you?')
-    console.log (userAge)
+        console.log (userAge)
     }
-    if (userAge === "isNaN"){
+    if (isNaN(userAge)=== true){
         document.write('PLease enter a numerical number')
-    }  
-    if(userAge === "Number"){
+    } 
+    if(isNaN(userAge) === false){
         document.write("")}
+}
 
-userAge();
+// userAge();
 
 // userAnswer Var
-userAnswer
-function getUserAnswer(){
+// userAnswer
+function userAnswer(){
     let userAnswer = prompt("Want to Sponsor a Rebel?");
     console.log (userAnswer)
     while(userAnswer !== "yes" && userAnswer !== "no"){
@@ -44,4 +46,13 @@ function getUserAnswer(){
     else if(userAnswer === "no"){
         document.write("Sorry to hear of your oppression!")}
 } 
-UserAnswer();
+// UserAnswer();
+
+picsOnPg
+function picturesOnPage(){
+    let numofpic = prompt('How many planets must be destroyed?')
+    for(let i = 0; i < numofpic; i++){
+        document.write('<img src="https://2.bp.blogspot.com/-fOgVYdI3bbI/WDqx_-655AI/AAAAAAAAKT8/oYDYpS2is0U-IHBNcZGZBBLxwIz4FelowCLcB/s400/alderaan.jpg">')
+    }
+}
+// picturesOnPage();
